@@ -155,5 +155,25 @@
 			"\treturn"
 		],
 		"description": "Create function",
+	},
+
+	"Create timer decorator":{
+		"scope": "python",
+		"prefix": "decoratortimer",
+		"body": [
+			"def timer(func):",
+			"",
+			"\tdef real(*args, **kwargs):",
+			"",
+			"\t\ttime1 = time.time()",
+			"",
+			"\t\tfunc(*args, **kwargs)",
+			"",
+			"\t\ttotal = time.time() - time1",
+			"",
+			"\t\tprint(f\"The function {func.__name__} took {total} seconds\")",
+			"\treturn real"
+		],
+		"description": "Create timer decorator",
 	}
 }
