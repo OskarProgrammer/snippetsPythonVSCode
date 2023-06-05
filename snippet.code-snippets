@@ -175,5 +175,36 @@
 			"\treturn real"
 		],
 		"description": "Create timer decorator",
-	}
+	},
+
+	"Open file to read": {
+		"scope": "python",
+		"prefix": "openfileread",
+		"body": [
+			"with open(path, 'r') as file:",
+			"\tzawartosc = file.read()"
+		],
+		"description": "Open file to read",
+	},
+
+	"Open file to write": {
+		"scope": "python",
+		"prefix": "openfilewrite",
+		"body": [
+			"with open(path, 'w') as file:",
+			"\tfile.write(\"\")",
+		],
+		"description": "Open file to write",
+	},
+
+	"Open file to append": {
+		"scope": "python",
+		"prefix": "openfileappend",
+		"body": [
+			"with open(path, 'a') as file:",
+			"\tfile.write(\"\")",
+		],
+		"description": "Open file to append",
+	},
+
 }
