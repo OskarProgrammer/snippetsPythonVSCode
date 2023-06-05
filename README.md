@@ -41,3 +41,5 @@
 "prefix": "fib" --> "description": "Create fibonacci function"
 
 "prefix": "generator" --> "description": "Create generator function"
+
+"prefix": "integration" --> "description": "Create integration function"

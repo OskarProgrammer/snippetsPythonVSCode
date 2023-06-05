@@ -258,4 +258,17 @@
 		],
 		"description": "Create generator function",
 	},
+
+	"Create integration function": {
+		"scope": "python",
+		"prefix": "integration",
+		"body": [
+			"def integration(start: int, koniec: int) -> float:",
+			"\twynik = scipy.integrate.quad(function, start, koniec)",
+			"",
+			"def function(x: float) -> float:",
+			"\treturn pow(x,2)-3*pow(x,3)+x-25 #your function"
+		],
+		"description": "Create integration function",
+	},
 }
