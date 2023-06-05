@@ -1,0 +1,159 @@
+{
+	"Create class with only __init__ method": {
+		"scope": "python",
+		"prefix": "initclass",
+		"body": [
+			"class MyClass(object):",
+			"\tdef __init__(self, arguments: type) -> None:",
+			"\t\t#your code here for creating the object of this class",
+			"\t\t..."
+		],
+		"description": "Create class with __init__ method"
+	},
+
+	"Create class with __super__ and __init__ method": {
+		"scope": "python",
+		"prefix": "newclass",
+		"body": [
+			"class MyClass(object):",
+			"\tdef __new__(cls) -> object:",
+			"\t\t#default",
+			"\t\treturn super().__new__(cls)",
+			"",
+			"\tdef __init__(self, arguments: type) -> None:",
+			"\t\t#your code here for creating the object of this class",
+			"\t\t..."
+		],
+		"description": "Create class with __init__ and __super__method"
+	},
+
+	"Create abstractmethod": {
+		"scope": "python",
+		"prefix": "absclass",
+		"body": [
+			"class MyClass(ABC):",
+			"\tdef __new__(cls) -> object:",
+			"\t\t#default",
+			"\t\treturn super().__new__(cls)",
+			"",
+			"\tdef __init__(self, arguments: type) -> None:",
+			"\t\t#your code here for creating the object of this class",
+			"\t\t...",
+			"",
+			"\t@abstractmethod",
+			"\tdef myAbstractMethod(self, *args, **kwargs):",
+			"\t\t..."
+		],
+		"description": "Create abstract class with __init__ , __super__ and abstract method"
+	},
+
+	"Create private method":{
+		"scope": "python",
+		"prefix": "primet",
+		"body": [
+			"def __myPrivateMethod(self, *args, **kwargs):",
+			"\t#your code here",
+			"\t..."
+		],
+		"description": "Create private method in your class"
+	},
+
+	"Create protected method": {
+		"scope": "python",
+		"prefix": "promet",
+		"body": [
+			"def _myProtectedMethod(self, *args, **kwargs):",
+			"\t#your code here",
+			"\t..."
+		],
+		"description": "Create protected method in your class"
+	},
+
+	"Create abstract method": {
+		"scope": "python",
+		"prefix": "absmet",
+		"body": [
+			"@abstractmethod",
+			"def myAbstractMethod(self, *args, **kwargs):",
+			"\t..."
+		],
+		"description": "Create private method in your class"
+	},
+
+	"Create private variable": {
+		"scope": "python",
+		"prefix": "privar",
+		"body": [
+			"self.__myPrivateVariable = myPrivateVariable",
+		],
+		"description": "Create private variable in your class"
+	},
+
+	"Create protected variable": {
+		"scope": "python",
+		"prefix": "provar",
+		"body": [
+			"self._myProtectedVariable = myProtectedVariable",
+		],
+		"description": "Create protected variable in your class"
+	},
+
+	"Create setter for variable": {
+		"scope": "python",
+		"prefix": "setter",
+		"body": [
+			"@variable.setter",
+			"def variable(self, __value: any):",
+			"\tself.__variable = __value"
+		],
+		"description": "Create setter for private variable"
+	},
+
+	"Create getter for variable": {
+		"scope": "python",
+		"prefix": "getter",
+		"body": [
+			"@property",
+			"def variable(self) -> str:",
+			"\treturn self.__variable"
+		],
+		"description": "Create getter for private variable"
+	},
+
+	"Create getter and setter for variable": {
+		"scope": "python",
+		"prefix": "getset",
+		"body": [
+			"@property",
+			"def variable(self) -> str:",
+			"\treturn self.__variable",
+			"",
+			"@variable.setter",
+			"def variable(self, __value: any):",
+			"\tself.__variable = __value"
+		],
+		"description": "Create getter and setter for private variable"
+	},
+
+	"Create for loop": {
+		"scope": "python",
+		"prefix": "looprange",
+		"body": [
+			"for x in range(start,end):",
+			"\t# your code here",
+			"\t..."
+		],
+		"description": "Create for loop with range",
+	},
+
+	"Create function": {
+		"scope": "python",
+		"prefix": "func",
+		"body": [
+			"def func(*args, **kwargs) -> type:",
+			"\t# your code here",
+			"\treturn"
+		],
+		"description": "Create function",
+	}
+}
