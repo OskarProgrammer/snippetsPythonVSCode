@@ -215,7 +215,17 @@
 			"print(power_square(2))"
 		],
 		"description": "Create lambda expression",
+	},	
+
+	"Create counting function": {
+		"scope": "python",
+		"prefix": "count",
+		"body": [
+			"def count(n: int):",
+			"\tfor x in range(n,0,-1):",
+			"\t\tsleep(1)",
+			"\t\tprint(x)"
+		],
+		"description": "Create counting function",
 	},
-
-
 }
