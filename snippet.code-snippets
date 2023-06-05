@@ -207,4 +207,15 @@
 		"description": "Open file to append",
 	},
 
+	"Create lambda expression": {
+		"scope": "python",
+		"prefix": "lambda_expression",
+		"body": [
+			"power_square = lambda x: x**2",
+			"print(power_square(2))"
+		],
+		"description": "Create lambda expression",
+	},
+
+
 }
