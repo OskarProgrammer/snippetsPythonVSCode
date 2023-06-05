@@ -244,4 +244,18 @@
 		"description": "Create fibonacci function",
 	},
 
+	"Create generator function": {
+		"scope": "python",
+		"prefix": "generator",
+		"body": [
+			"def generator(n: int) -> int:",
+			"\tfor x in range(0,n):",
+			"\t\tyield x",
+			"",
+			"#example:",
+			"x = generator(10**120)",
+			"print(next(x))",
+		],
+		"description": "Create generator function",
+	},
 }

@@ -39,3 +39,5 @@
 "prefix": "count" --> "description": "Create counting function"
 
 "prefix": "fib" --> "description": "Create fibonacci function"
+
+"prefix": "generator" --> "description": "Create generator function"
