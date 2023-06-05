@@ -35,3 +35,7 @@
 "prefix": "openfileappend" --> "description": "Open file to append"
 
 "prefix": "lambda_expression" --> "description": "Create lambda expression"
+
+"prefix": "count" --> "description": "Create counting function"
+
+"prefix": "fib" --> "description": "Create fibonacci function"
